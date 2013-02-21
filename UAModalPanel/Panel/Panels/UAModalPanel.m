@@ -123,7 +123,7 @@
 - (UIButton*)closeButton {
 	if (!closeButton) {
 		self.closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-		[self.closeButton setImage:[UIImage imageNamed:@"close.png"] forState:UIControlStateNormal];
+		[self.closeButton setImage:[UIImage imageNamed:@"ZMLibraryResources.bundle/close.png"] forState:UIControlStateNormal];
 		[self.closeButton setFrame:CGRectMake(0, 0, 44, 44)];
 		self.closeButton.layer.shadowColor = [[UIColor blackColor] CGColor];
 		self.closeButton.layer.shadowOffset = CGSizeMake(0,4);
@@ -137,11 +137,11 @@
 
 - (UIButton*)actionButton {
 	if (!actionButton) {
-		UIImage *image = [UIImage imageNamed:@"modalButton.png"];
+		UIImage *image = [UIImage imageNamed:@"ZMLibraryResources.bundle/modalButton.png"];
 		UIImage *stretch = (([UIImage respondsToSelector:@selector(resizableImageWithCapInsets:)]) ?
 				    [image resizableImageWithCapInsets:UIEdgeInsetsMake(0, image.size.width/2.0, 0, image.size.width/2.0)] :
 				    [image stretchableImageWithLeftCapWidth:image.size.width/2.0 topCapHeight:image.size.width/2.0]);
-		UIImage *image2 = [UIImage imageNamed:@"modalButton-selected.png"];
+		UIImage *image2 = [UIImage imageNamed:@"ZMLibraryResources.bundle/modalButton-selected.png"];
 		UIImage *stretch2 = (([UIImage respondsToSelector:@selector(resizableImageWithCapInsets:)]) ?
 				     [image2 resizableImageWithCapInsets:UIEdgeInsetsMake(0, image2.size.width/2.0, 0, image2.size.width/2.0)] :
 				     [image stretchableImageWithLeftCapWidth:image2.size.width/2.0 topCapHeight:image2.size.width/2.0]);
